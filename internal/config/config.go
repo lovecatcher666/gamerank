@@ -57,8 +57,8 @@ func LoadConfig() *Config {
 		MySQLIdleConns: getEnvAsInt("MYSQL_IDLE_CONNS", 10),
 
 		// Redis 配置
-		RedisAddr:     getEnv("REDIS_ADDR", "rw-51f956.redis.qihudb.net:11307"),
-		RedisPassword: getEnv("REDIS_PASSWORD", "5a0076612d5b6361360"),
+		RedisAddr:     getEnv("REDIS_ADDR", "127.0.0.1:11307"),
+		RedisPassword: getEnv("REDIS_PASSWORD", ""),
 		RedisDB:       getEnvAsInt("REDIS_DB", 0),
 		RedisPoolSize: getEnvAsInt("REDIS_POOL_SIZE", 100),
 
